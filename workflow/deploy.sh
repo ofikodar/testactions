@@ -16,7 +16,8 @@ git push origin "$timestamp"
 # delete the first tags
 max_tags=5
 
-all_tags=$(git tag --sort=-creatordate )
+all_tags=$(git tag --sort=creatordate )
+echo "$all_tags"
 tags_counter=$(git tag | wc -l)
 if [ "$tags_counter" -gt "$max_tags" ]
 then
