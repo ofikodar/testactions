@@ -4,6 +4,7 @@ git config --global credential.helper cache
 git checkout master
 git merge dev
 git push origin master
+git checkout dev
 
 #----------------------------------------------
 # create tag with timestamp
