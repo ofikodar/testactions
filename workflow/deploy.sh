@@ -1,5 +1,9 @@
 #----------------------------------------------
 # update master branch
+git config --global credential.helper cache
+git checkout master
+git merge dev
+git push origin master
 
 #----------------------------------------------
 # create tag with timestamp
